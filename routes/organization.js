@@ -7,7 +7,7 @@ var GitHub = require('github-api');
 // However, for the purposes of this application, I will comment it out and inform'
 // The devs to replace this token with a valid one. 
 var gitHubClient = new GitHub({
-    token: 'ab20b6643f97dd14d28eb9c61b28aaf397549ae3'
+    token: 'TODO - replace'
 });
 
 /**
