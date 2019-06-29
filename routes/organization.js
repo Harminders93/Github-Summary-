@@ -39,7 +39,9 @@ router.get('/', function(req, res, next) {
     var organizationRepos = [];
     organization.getRepos(function(err, repos) {
         if (err) {
-            // TODO - Handle error messaging in the future
+            console.log('here');
+            res.status(500);
+            res.render('error', { message: 'Problem encountered while trying to retrieve organization information for ' + organizationName });
         }
         // I believe to get the number of contributors, I need to call - https://developer.github.com/v3/repos/#list-contributors
         // The current endpoint does not return any information about how many contributors belong to a repository.
