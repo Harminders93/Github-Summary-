@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form method="GET" action="/organization">
+      <p> Name of organization: </p>
+      <input type="text" name="name" />
+      <br> </br>
+      <p> Sort option: </p>
+      <select name="sort" size="3">
+        <option value="forks"> Forks </option>
+        <option value="stars"> Stars </option>
+        <option value="contributors"> Contributors </option>
+      </select>
+      <br></br>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
